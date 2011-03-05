@@ -1,0 +1,12 @@
+.autotest
+bin/nameboy
+domains.txt
+Gemfile
+Gemfile.lock
+History.md
+lib/nameboy.rb
+Manifest.txt
+Rakefile
+README.md
+test/test_nameboy.rb
+TODO.md

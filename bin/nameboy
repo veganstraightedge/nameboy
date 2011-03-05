@@ -29,7 +29,7 @@ def loggy?
 end
 
 def check_args
-  if ARGV.length.zero? || ARGV[0] == "-h"
+  if ARGV.length.zero? || ARGV[0] == "-h" || ARGV[0] == "help"
     help_exit
   end
 

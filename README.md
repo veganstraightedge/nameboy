@@ -70,6 +70,17 @@ There are plans for more, thus the namespace.
           new_password : what you use to log into access.enom.com
       domains_file_url : publicly accessible url of a plain text listing of domains
 
+This will change all of the domains' passwords listed in `domains_file_url`
+from `current_password` to `new_password`.
+
+### Change Passwords
+
+    nameboy enom:password current_password new_password domains_file_url -l
+
+      -l : turns on the Logger with STDERR
+
+Handy for debugging.
+
 ### Example domains.txt
 
     example.com

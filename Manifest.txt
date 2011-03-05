@@ -1,0 +1,9 @@
+.autotest
+History.md
+Manifest.txt
+README.md
+TODO.md
+Rakefile
+bin/nameboy
+lib/nameboy.rb
+test/test_nameboy.rb

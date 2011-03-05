@@ -12,16 +12,11 @@ include Nameboy
 @new_password     = ""
 @url              = ""
 
-def read_help_text
+def help_text
   readme = File.read("../README.md")
-  help_exit = readme.split("## Usage").last.strip
-end
-
-def help_exit
-  puts
-  puts read_help_text
-  puts
-  exit
+  text  = "\n"
+  text << readme.split("## Usage").last.strip
+  text << "\n"
 end
 
 def loggy?
@@ -30,23 +25,20 @@ end
 
 def check_args
   if ARGV.length.zero? || ARGV[0] == "-h" || ARGV[0] == "help"
-    help_exit
+    abort help_text
   end
 
   unless ARGV[0] == "enom:password"
-    puts
-    puts "I only know how to deal with enom:password"
-    help_exit
+    abort "\nI only know how to deal with enom:password #{help_text}"
   end
 
   if ARGV.length < 4
-    puts
-    puts "TOO FEW ARGUMENTS"
-    puts
-    puts "The format is:"
-    puts "nameboy enom:password @current_password @new_password domains_file_url"
-    puts
-    exit
+    abort "TOO FEW ARGUMENTS
+
+The format is:
+nameboy enom:password @current_password @new_password domains_file_url
+
+"
   end
 end
 

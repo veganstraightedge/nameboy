@@ -16,7 +16,7 @@ Batch edit passwords for domains managed at
 
 ## SYNOPSIS
 
-    nameboy enom:password current_password new_password https://github.com/veganstraightedge/nameboy/blob/master/domains.txt
+    nameboy enom:password current_password new_password https://raw.github.com/veganstraightedge/nameboy/master/domains.txt
 
 ## REQUIREMENTS
 
@@ -91,4 +91,4 @@ Handy for debugging.
 
 ### Example
 
-    nameboy enom:password foo bar https://github.com/veganstraightedge/nameboy/blob/master/domains.txt
+    nameboy enom:password foo bar https://raw.github.com/veganstraightedge/nameboy/master/domains.txt

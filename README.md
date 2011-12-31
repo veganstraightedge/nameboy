@@ -41,7 +41,7 @@ and generate the RDoc.
 
 ## LICENSE
 
-PUBLIC DOMAIN.
+**PUBLIC DOMAIN**.
 Your heart is as free as the air you breathe.
 The ground you stand on is liberated territory.
 

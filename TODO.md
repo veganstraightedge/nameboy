@@ -13,9 +13,9 @@
    
       unless @new_password == @new_password
         abort "
-OH NOES! You mistyped one of your passwords.
-Start over and try again.
-"
+        OH NOES! You mistyped one of your passwords.
+        Start over and try again.
+        "
       end
    
       puts "What is the URL of your domains file?"
